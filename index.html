@@ -70,6 +70,49 @@
         <hr>
         <h2>waiting for you to join</h2>
     </div>
+     <div class="member">
+            <h2>Contact Us</h2>
+            <form id="contact-form" onsubmit="sendEmail(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        
+        <script>
+            // Initialize EmailJS with your user ID
+            (function() {
+                emailjs.init("6AK-oC349lPVKacez"); // Replace with your EmailJS user ID
+            })();
+        
+            function sendEmail(event) {
+                event.preventDefault(); // Prevent form from submitting the default way
+
+                const form = document.getElementById("contact-form");
+                const formData = new FormData(form);
+
+                // Debugging lines to check form and form data
+                console.log('Form Element:', form); // Check if the form is correctly selected
+                console.log('Form Data:', Array.from(formData.entries())); // Log form data
+
+                // Ensure you replace 'service_pflo4yv' and 'template_mhgnh1e' with your actual IDs
+                emailjs.sendForm('service_pflo4yv', 'template_mhgnh1e', form)
+                    .then((result) => {
+                        alert('Message sent successfully!');
+                        form.reset(); // Clear the form
+                    }, (error) => {
+                        alert('Error sending message: ' + error.text);
+                        console.error('EmailJS Error:', error);
+                    });
+            }
+        </script>
     <footer>
         <p>&copy; 2024 RC4 Games. All Rights Reserved.</p>
     </footer>
