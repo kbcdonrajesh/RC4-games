@@ -88,7 +88,7 @@
         <script>
             // Initialize EmailJS with your user ID
             (function() {
-                emailjs.init("97uvqdJCvOha5FNb8"); // Replace with your EmailJS user ID
+                emailjs.init("bMER1LB6prDZ4wVDQ"); // Replace with your EmailJS user ID
             })();
         
             function sendEmail(event) {
@@ -102,132 +102,7 @@
                 console.log('Form Data:', Array.from(formData.entries())); // Log form data
 
                 // Ensure you replace 'service_pflo4yv' and 'template_mhgnh1e' with your actual IDs
-                emailjs.sendForm('service_pflo4yv', 'template_mhgnh1e', form)
-                    .then((result) => {
-                        alert('Message sent successfully!');
-                        form.reset(); // Clear the form
-                    }, (error) => {
-                        alert('Error sending message: ' + error.text);
-                        console.error('EmailJS Error:', error);
-                    });
-            }
-        </script>
-        
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 RC4 Games. All Rights Reserved.</p>
-    </footer>
-
-    <script src="phy.py"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RC4 Games - Game Development and Web Development</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="header">
-            <div class="logo">
-                <img src="output-onlinepngtools.png" alt="RC4 Games Logo" width="200" class="rotating-logo">
-
-            </div>
-            <nav class="nav-links">
-                <div class="gap1">
-                    <h3>TOOLS <br>for assets</h3>
-                </div>
-                <div class="unityas">
-                    <a href="https://assetstore.unity.com/" class="unityasi">
-                        <i class="fa-brands fa-unity"></i>
-                        <p>Unity Asset Store</p>
-                    </a>
-                </div>
-                <div class="gap1"></div>
-                <div class="sketchfab">
-                    <a href="https://sketchfab.com" class="sketchfabi">
-                        <i class="fa-solid fa-cube"></i>
-                        <p>Sketchfab</p>
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content Section -->
-    <main>
-        <section class="member">
-            <h2>Upcoming Game</h2>
-            <h1>Chronicles - The City of Secrets</h1>
-        </section>
-
-        <section class="member">
-            <h2>Become a Member</h2>
-            <h4>Contact us at:</h4>
-            <h2><a href="mailto:games.rc4.studio@gmail.com">games.rc4.studio</a></h2>
-            <p>Team RC4 Games</p>
-            <p>Rajesh Chhangani, CEO</p>
-        </section>
-
-        <section class="member">
-            <h2>Blog: <a href="/">Dev Junction Point</a></h2>
-            <p>Add posts to the blog website Dev Junction Point</p>
-            <a href="/post_creation.html">
-                <button class="btn">Add Post</button>
-            </a>
-        </section>
-
-        <section class="member">
-            <h2>Rajesh Chhangani</h2>
-            <h3>Position: CEO</h3>
-            <h4>Email: <a href="mailto:chhanganirajesh486@gmail.com">chhanganirajesh486@gmail.com</a></h4>
-            <hr>
-            <h2>We are waiting for you to join!</h2>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section class="member">
-            <h2>Contact Us</h2>
-            <form id="contact-form" onsubmit="sendEmail(event)">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-        
-        <script>
-            // Initialize EmailJS with your user ID
-            (function() {
-                emailjs.init("97uvqdJCvOha5FNb8"); // Replace with your EmailJS user ID
-            })();
-        
-            function sendEmail(event) {
-                event.preventDefault(); // Prevent form from submitting the default way
-
-                const form = document.getElementById("contact-form");
-                const formData = new FormData(form);
-
-                // Debugging lines to check form and form data
-                console.log('Form Element:', form); // Check if the form is correctly selected
-                console.log('Form Data:', Array.from(formData.entries())); // Log form data
-
-                // Ensure you replace 'service_pflo4yv' and 'template_mhgnh1e' with your actual IDs
-                emailjs.sendForm('service_pflo4yv', 'template_mhgnh1e', form)
+                emailjs.sendForm('service_n9ge21c', 'template_wojvu8l', form)
                     .then((result) => {
                         alert('Message sent successfully!');
                         form.reset(); // Clear the form
